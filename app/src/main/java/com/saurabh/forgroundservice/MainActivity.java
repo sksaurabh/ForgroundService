@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MyForeGroundService.class);
                 intent.setAction(MyForeGroundService.ACTION_STOP_FOREGROUND_SERVICE);
-                startService(intent);
+                stopService(intent);
             }
         });
     }
